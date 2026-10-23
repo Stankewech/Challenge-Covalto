@@ -2,7 +2,6 @@
 1. [Información General](#informacion-general)
 2. [Tecnologías](#tecnologias)
 3. [Instalación](#instalacion)
-4. [Colaboración](#colaboracion)
 
 
 ### Información General
