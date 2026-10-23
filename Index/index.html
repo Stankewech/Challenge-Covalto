@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Tres proyectos de QA, tres retos y una forma de demostrar cómo valido, automatizo y aseguro la calidad del software.">
+  <meta name="theme-color" content="#f7f7f4">
+  <title>QA Challenge</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="Challenge, inicio"><span class="brand-mark">↗</span> QA CHALLENGE</a>
+    <nav class="nav" aria-label="Navegación principal">
+      <a class="active" href="#inicio">Inicio</a>
+      <a href="#proyectos">Retos</a>
+    </nav>
+    <a class="github-link" href="https://github.com/Stankewech" target="_blank" rel="noreferrer">
+      <span class="github-symbol">◉</span> Ver en GitHub <span aria-hidden="true">↗</span>
+    </a>
+    <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="inicio" style="grid-template-columns: 1fr;">
+      <div class="hero-copy">
+        <p class="eyebrow">THIRD RIDE CHALLENGE.</p>
+        <h1 style="max-width: 100%;">Third Ride<br><em>Challenge.</em></h1>
+        <a class="text-link" href="#proyectos"><span class="link-line"></span> Explorar los retos <span>→</span></a>
+      </div>
+    </section>
+
+    <section class="projects section-wrap" id="proyectos" aria-label="Proyectos del challenge">
+      
+      <!-- EJERCICIO 1-->
+      <article class="project" id="proyecto-01">
+        <div class="project-number"><span>01</span><i></i></div>
+        <div class="project-info">
+          <h2>Prueba 1</h2>
+          <p class="project-description">Auditoría de una página web estática para encontrar errores visuales y estructurales, generando un documento de hallazgos y el código corregido.</p>
+          <div class="project-actions">
+            <a class="button button-dark" href="https://github.com/Stankewech/Challenge-Covalto/tree/main/Ejercicio%201_HTML" target="_blank" rel="noreferrer">◉ Ver código <span>↗</span></a>
+            <a class="button button-dark" href="../Ejercicio 1_HTML/Reporte de fallos.html" target="_blank" rel="noreferrer">◉ Ver reporte de errores <span>↗</span></a>
+            <a class="button button-light" href="../Ejercicio 1_HTML/index1.html">↗ Ir a la Prueba 1</a>
+          </div>
+        </div>
+        <div class="project-points">
+          <h3>Instrucciones</h3>
+          <ul>
+            <li>Encuentra todos los errores que contiene la página y enlístarlo en un documento.</li>
+            <li>Corrígelos y coloca la evidencia de la página de manera correcta.</li>
+            <li>Incluir código corregido y documento de hallazgos.</li>
+            <li>Crear repositorio en github y compartirlo para su revisión.</li>
+          </ul>
+        </div>
+        <div class="visual visual-api" aria-label="Vista conceptual de documento de hallazgos">
+          <div class="window-bar"><span></span><span></span><span></span><div>documento-hallazgos.md</div></div>
+          <div class="api-window">
+            <aside><b>REPORTE</b><span class="selected">Navegación</span><span>Imágenes</span><span>Tipografía</span><span>Estructura</span></aside>
+            <div class="api-content"><p class="mono-label">BUG REPORT / UI</p><h3>Hallazgos - Menú Principal</h3><p class="muted">Severidad: Alta | Prioridad: Media</p><div class="endpoint"><b class="post">BUG 01</b><code>Navbar Overlap</code></div><p class="small">Los elementos del menú se superponen en resoluciones menores a 768px.</p><div class="endpoint"><b class="put">FIX</b><code>CSS Flexbox</code></div><p class="small">Se aplicó flex-wrap y ajustes de padding al contenedor padre.</p></div>
+          </div>
+          <div class="visual-caption">01 — DOCUMENTO DE HALLAZGOS <span>VISTA ILUSTRATIVA</span></div>
+        </div>
+      </article>
+
+      <!-- EJERCICIO 2-->
+      <article class="project" id="proyecto-02">
+        <div class="project-number"><span>02</span><i></i></div>
+        <div class="project-info">
+          <h2>Prueba 2</h2>
+          <p class="project-description">Scripts en Python para consumir y validar la API de Rick and Morty, comprobando tipos de datos, códigos de estado y tiempos de respuesta.</p>
+          <div class="project-actions">
+            <a class="button button-dark" href="https://github.com/Stankewech/Challenge-Covalto/tree/main/Ejercicio%202_API%20test" target="_blank" rel="noreferrer">◉ Ver código <span>↗</span></a>
+            <a class="button button-light" href="../Ejercicio 2_API test/buscador.html">↗ Ir a la Prueba 2</a>
+          </div>
+        </div>
+        <div class="project-points">
+          <h3>Instrucciones</h3>
+          <ul>
+            <li>Consumir a los personajes principales y vivos de la serie.</li>
+            <li>Indicar el tiempo de respuesta de la api.</li>
+            <li>Validación de status code y de vivos/muertos.</li>
+            <li>Validación de tipos de datos en el response obtenido.</li>
+          </ul>
+        </div>
+        <div class="visual visual-terminal" aria-label="Vista conceptual de la salida del test de API">
+          <div class="window-bar terminal-bar"><span></span><span></span><span></span><div>terminal — api_test.py</div></div>
+          <div class="terminal-body">
+            <p><i>$</i> python api_test.py --endpoint character</p>
+            <p class="log">[INFO] Conectando a https://rickandmortyapi.com/...</p><p class="success">[PASS] Status Code: 200 OK</p><p class="success">[PASS] Tiempo de respuesta: 145ms</p><p class="log">[INFO] Validando esquema de datos...</p>
+            <div class="terminal-table"><span>Name (str)</span><span>Status (str)</span><span>Valid</span><b>Rick Sanchez</b><b>Alive</b><b>✓ Type Match</b><b>Morty Smith</b><b>Alive</b><b>✓ Type Match</b><b>Abadango</b><b>Dead</b><b>✓ Type Match</b></div>
+            <p class="prompt">$ <span class="cursor"></span></p>
+          </div>
+          <div class="visual-caption">02 — RESULTADOS DEL SCRIPT PYTHON <span>VISTA ILUSTRATIVA</span></div>
+        </div>
+      </article>
+
+      <!-- EJERCICIO 3-->
+      <article class="project" id="proyecto-03">
+        <div class="project-number"><span>03</span><i></i></div>
+        <div class="project-info">
+          <h2>Prueba 3</h2>
+          <p class="project-description">Automatización de un flujo completo de registro utilizando Selenium con Python, respaldado por una matriz de casos de prueba exhaustiva.</p>
+          <div class="project-actions">
+            <a class="button button-dark" href="https://github.com/Stankewech/Challenge-Covalto/tree/main/Ejercicio%203_Selenium" target="_blank" rel="noreferrer">◉ Ver código <span>↗</span></a>
+            <a class="button button-dark" href="../Ejercicio 3_Selenium/prueba final.html" target="_blank" rel="noreferrer">◉ Ver mátriz de pruebas <span>↗</span></a>
+            <a class="button button-light" href="../Ejercicio 3_Selenium/Auto.py">↗ Ir a la Prueba 3</a>
+          </div>
+        </div>
+        <div class="project-points">
+          <h3>Instrucciones</h3>
+          <ul>
+            <li>Realizar la automatización del sitio indicado.</li>
+            <li>Realizar un registro completo.</li>
+            <li>Generar una matriz de pruebas (identificación de casos de prueba).</li>
+            <li>Incluir código y generación de matriz de casos de pruebas a detalle.</li>
+          </ul>
+        </div>
+        <div class="visual visual-results" aria-label="Vista conceptual de matriz de pruebas y automatización">
+          <div class="results-head"><span class="check-badge">✓</span><div><strong>Test Suite Completed</strong><small>Flujo de registro validado por Selenium</small></div><span class="run-time">01:42</span></div>
+          <div class="result-stats"><div><b>06</b><small>Total TC</small></div><div><b>06</b><small>Passed</small></div><div><b>00</b><small>Failed</small></div><div><b>00</b><small>Skipped</small></div></div>
+          <h4>Ejecución de Casos de Prueba (Matriz)</h4>
+          <ul class="test-list"><li><span>✓</span> TC-01: Carga inicial de la página <small>1.2s</small></li><li><span>✓</span> TC-02: Validación de campos obligatorios <small>2.4s</small></li><li><span>✓</span> TC-03: Ingreso de credenciales válidas <small>1.8s</small></li><li><span>✓</span> TC-04: Selección de menús desplegables <small>3.1s</small></li><li><span>✓</span> TC-05: Verificación de pantalla de éxito <small>1.9s</small></li></ul>
+          <div class="visual-caption">03 — REPORTE DE SELENIUM <span>VISTA ILUSTRATIVA</span></div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer section-wrap">
+    <a class="brand" href="#inicio"><span class="brand-mark">↗</span> QA CHALLENGE</a>
+    <div class="footer-links"><a href="https://github.com/Stankewech" target="_blank" rel="noreferrer">GitHub ↗</a><a href="mailto:omartao1800@alumno.ipn.mx">Email ↗</a></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

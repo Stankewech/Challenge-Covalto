@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="es">
+    <link rel="stylesheet" href="../Index/styles.css">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explorador de la Familia Smith consumiendo la API de Rick and Morty.">
+  <meta name="theme-color" content="#f7f7f4">
+  <title>Prueba 2</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+   <a class="github-link" href="../Index/index.html">
+  <span class="github-symbol">◉</span> Volver al Portafolio <span aria-hidden="true">↗</span>
+</a>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="inicio">
+      <div class="hero-copy">
+        <p class="eyebrow">RETO API / CONSUMO DE DATOS</p>
+        <h1>Personajes<br><em>principales</em></h1>
+        
+        <button id="load-family-btn" class="button button-dark" style="margin-top: 31px;">
+          ◉ Cargar Personajes <span>↓</span>
+        </button>
+      </div>
+      <aside class="hero-aside">
+        <p class="eyebrow">DATOS TÉCNICOS</p>
+        <p class="aside-copy">El script realiza una única petición GET a un endpoint múltiple para extraer exclusivamente a los 5 protagonistas, optimizando el tiempo de respuesta y los recursos de red.</p>
+        <div class="stats">
+          <div class="stat"><span class="stat-icon">〈/〉</span><strong>05</strong><span>PERSONAJES</span></div>
+          <div class="stat"><span class="stat-icon">▱</span><strong>200</strong><span>STATUS OK</span></div>
+          <div class="stat" id="time-stat"><span class="stat-icon">⏱</span><strong>0ms</strong><span>TIEMPO RESP.</span><small>Esperando fetch...</small></div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section-wrap">
+      <!-- Contenedor donde se inyectarán las tarjetas mediante JS -->
+      <div id="character-grid" class="character-grid">
+        <!-- Estado inicial antes de cargar -->
+        <div class="empty-state">
+           Haz clic en "Cargar Personajes" para iniciar el consumo de la API.
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer section-wrap">
+    <a class="brand" href="#"><span class="brand-mark">↗</span> CHALLENGE</a>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
