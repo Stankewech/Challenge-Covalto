@@ -28,11 +28,3 @@ $ start index.html
 ```
 Nota: Para ver el resumen especial del proyecto, abre el archivo ```Reporte de fallos.html```. Ahí podrás ver una lista interactiva con los 19 errores que reparamos.
 
-## Colaboración
-***
-Instrucciones sobre cómo ayudar en el proyecto.
-> Si quieres proponer cambios o avisarnos de un error nuevo, por favor abre un "issue" en el repositorio.
-> Asegúrate de anotar el ID del error, qué tan grave es y el archivo afectado, igual que en nuestro reporte.
-> Todo el código debe mantener el mismo orden que ya usamos.
-
-
